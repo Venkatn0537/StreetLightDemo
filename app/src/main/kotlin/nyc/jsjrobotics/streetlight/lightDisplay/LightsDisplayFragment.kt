@@ -5,12 +5,16 @@ import android.support.v4.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
+import nyc.jsjrobotics.streetlight.DefaultFragment
+import javax.inject.Inject
 
 
-class LightsDisplayFragment : Fragment() {
+class LightsDisplayFragment : DefaultFragment() {
 
-    val view : LightsDisplayView = LightsDisplayView()
-    val presenter: LightDisplayPresenter = LightDisplayPresenter()
+    @Inject
+    lateinit var view : LightsDisplayView
+    @Inject
+    lateinit var presenter: LightDisplayPresenter
 
     companion object {
         val TAG = "Fragment.LightsDisplayFragment"

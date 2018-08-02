@@ -6,11 +6,12 @@ import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import android.widget.FrameLayout
+import javax.inject.Inject
 import nyc.jsjrobotics.streetlight.LightOption
 import nyc.jsjrobotics.streetlight.R
 import nyc.jsjrobotics.streetlight.runOnMainThread
 
-class LightsDisplayView {
+class LightsDisplayView @Inject constructor(){
     lateinit var rootXml : View
     lateinit var redLight : View
     lateinit var yellowLight : View
