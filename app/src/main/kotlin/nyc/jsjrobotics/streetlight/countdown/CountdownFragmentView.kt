@@ -6,8 +6,9 @@ import android.view.ViewGroup
 import android.widget.TextView
 import nyc.jsjrobotics.streetlight.R
 import nyc.jsjrobotics.streetlight.runOnMainThread
+import javax.inject.Inject
 
-class CountdownFragmentView {
+class CountdownFragmentView @Inject constructor() {
     lateinit var rootXml : View
     lateinit var currentFrame : TextView
     fun init(inflater: LayoutInflater, container: ViewGroup) {

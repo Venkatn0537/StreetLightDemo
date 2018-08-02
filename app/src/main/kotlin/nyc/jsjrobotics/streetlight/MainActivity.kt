@@ -6,7 +6,7 @@ import nyc.jsjrobotics.streetlight.countdown.CountdownFragment
 import nyc.jsjrobotics.streetlight.lightDisplay.LightsDisplayFragment
 
 
-class MainActivity : AppCompatActivity() {
+class MainActivity : DefaultActivity() {
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)

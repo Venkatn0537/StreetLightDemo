@@ -1,16 +1,18 @@
 package nyc.jsjrobotics.streetlight.countdown
 
 import android.os.Bundle
-import android.support.v4.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
+import nyc.jsjrobotics.streetlight.DefaultFragment
+import javax.inject.Inject
 
 
-class CountdownFragment : Fragment() {
+class CountdownFragment : DefaultFragment() {
 
-    val view = CountdownFragmentView()
-    val presenter = CountdownFragmentPresenter()
+    @Inject lateinit var view : CountdownFragmentView
+    @Inject lateinit var presenter : CountdownFragmentPresenter
+
     companion object {
         val TAG = "Fragment.CountdownFragment"
     }
