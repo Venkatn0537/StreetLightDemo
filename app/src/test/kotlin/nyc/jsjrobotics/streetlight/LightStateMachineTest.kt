@@ -1,4 +1,4 @@
-package nyc.jsjrobotics.praneethstreetlight
+package nyc.jsjrobotics.streetlight
 
 import org.junit.Assert.assertTrue
 import org.junit.Before
@@ -14,8 +14,9 @@ class LightStateMachineTest {
     }
 
     @Test
-    fun `test Light Machine inits on red`() {
+    fun `test Light Machine init state`() {
         assertTrue("Test machine should initialize on red light", testSubject.currentLight == LightOption.RED)
+        assertTrue("Street light model must start on 0 frame", testSubject.currentFrame == 0)
     }
 
     @Test

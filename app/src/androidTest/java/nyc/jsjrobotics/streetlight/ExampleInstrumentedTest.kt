@@ -1,4 +1,4 @@
-package nyc.jsjrobotics.praneethstreetlight
+package nyc.jsjrobotics.streetlight
 
 import android.support.test.InstrumentationRegistry
 import android.support.test.runner.AndroidJUnit4
@@ -19,6 +19,6 @@ class ExampleInstrumentedTest {
     fun useAppContext() {
         // Context of the app under test.
         val appContext = InstrumentationRegistry.getTargetContext()
-        assertEquals("nyc.jsjrobotics.praneethstreetlight", appContext.packageName)
+        assertEquals("nyc.jsjrobotics.streetlight", appContext.packageName)
     }
 }

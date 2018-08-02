@@ -1,9 +1,9 @@
-package nyc.jsjrobotics.praneethstreetlight
+package nyc.jsjrobotics.streetlight
 
 import android.os.Bundle
 import android.support.v7.app.AppCompatActivity
-import nyc.jsjrobotics.praneethstreetlight.countdown.CountdownFragment
-import nyc.jsjrobotics.praneethstreetlight.lightDisplay.LightsDisplayFragment
+import nyc.jsjrobotics.streetlight.countdown.CountdownFragment
+import nyc.jsjrobotics.streetlight.lightDisplay.LightsDisplayFragment
 
 
 class MainActivity : AppCompatActivity() {

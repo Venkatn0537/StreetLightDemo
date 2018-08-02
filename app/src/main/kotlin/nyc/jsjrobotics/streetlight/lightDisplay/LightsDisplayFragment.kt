@@ -1,4 +1,4 @@
-package nyc.jsjrobotics.praneethstreetlight.lightDisplay
+package nyc.jsjrobotics.streetlight.lightDisplay
 
 import android.os.Bundle
 import android.support.v4.app.Fragment

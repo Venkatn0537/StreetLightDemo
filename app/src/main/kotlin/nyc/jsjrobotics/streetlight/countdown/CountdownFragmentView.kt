@@ -1,11 +1,11 @@
-package nyc.jsjrobotics.praneethstreetlight.countdown
+package nyc.jsjrobotics.streetlight.countdown
 
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import android.widget.TextView
-import nyc.jsjrobotics.praneethstreetlight.R
-import nyc.jsjrobotics.praneethstreetlight.runOnMainThread
+import nyc.jsjrobotics.streetlight.R
+import nyc.jsjrobotics.streetlight.runOnMainThread
 
 class CountdownFragmentView {
     lateinit var rootXml : View

@@ -1,4 +1,4 @@
-package nyc.jsjrobotics.praneethstreetlight.countdown
+package nyc.jsjrobotics.streetlight.countdown
 
 import android.os.Bundle
 import android.support.v4.app.Fragment

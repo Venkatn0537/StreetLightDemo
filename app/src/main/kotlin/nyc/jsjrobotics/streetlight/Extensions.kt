@@ -1,4 +1,4 @@
-package nyc.jsjrobotics.praneethstreetlight
+package nyc.jsjrobotics.streetlight
 
 import android.os.Handler
 import android.os.Looper

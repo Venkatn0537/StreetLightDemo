@@ -1,4 +1,4 @@
-package nyc.jsjrobotics.praneethstreetlight
+package nyc.jsjrobotics.streetlight
 
 enum class LightOption(val timeUntilNextLight: Int) {
     RED(5),

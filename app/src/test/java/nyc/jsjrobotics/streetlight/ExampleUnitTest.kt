@@ -1,4 +1,4 @@
-package nyc.jsjrobotics.praneethstreetlight
+package nyc.jsjrobotics.streetlight
 
 import org.junit.Test
 

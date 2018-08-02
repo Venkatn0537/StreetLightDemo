@@ -1,8 +1,8 @@
-package nyc.jsjrobotics.praneethstreetlight.lightDisplay
+package nyc.jsjrobotics.streetlight.lightDisplay
 
 import android.os.Handler
-import nyc.jsjrobotics.praneethstreetlight.LightOption
-import nyc.jsjrobotics.praneethstreetlight.LightStateMachine
+import nyc.jsjrobotics.streetlight.LightOption
+import nyc.jsjrobotics.streetlight.LightStateMachine
 
 class LightDisplayPresenter {
     lateinit var lightDisplay: LightsDisplayView

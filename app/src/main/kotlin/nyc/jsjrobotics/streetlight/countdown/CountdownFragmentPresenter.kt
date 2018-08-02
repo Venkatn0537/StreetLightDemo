@@ -1,6 +1,6 @@
-package nyc.jsjrobotics.praneethstreetlight.countdown
+package nyc.jsjrobotics.streetlight.countdown
 
-import nyc.jsjrobotics.praneethstreetlight.LightStateMachine
+import nyc.jsjrobotics.streetlight.LightStateMachine
 
 class CountdownFragmentPresenter {
     lateinit var view : CountdownFragmentView
