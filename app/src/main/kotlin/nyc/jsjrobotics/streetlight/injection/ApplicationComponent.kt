@@ -17,4 +17,6 @@ import javax.inject.Singleton
 
 interface ApplicationComponent {
     fun inject(app: Application)
+    // Explicitly declare function returning a Provided object for dagger binding
+    fun getApplication(): Application
 }

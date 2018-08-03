@@ -23,9 +23,6 @@ class Application : android.app.Application(), HasActivityInjector, HasSupportFr
     @Inject
     lateinit var fragmentInjector: DispatchingAndroidInjector<Fragment>
 
-    @Inject
-    lateinit var mresources: Resources // This line does nothing at runtime time, but links dagger at compile time
-
     override fun onCreate() {
         super.onCreate()
         instance = this
