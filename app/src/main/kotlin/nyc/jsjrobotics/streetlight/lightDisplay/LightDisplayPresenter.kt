@@ -1,11 +1,9 @@
 package nyc.jsjrobotics.streetlight.lightDisplay
 
-import android.os.Handler
-import nyc.jsjrobotics.streetlight.LightOption
-import javax.inject.Inject
 import nyc.jsjrobotics.streetlight.LightStateMachine
+import javax.inject.Inject
 
-class LightDisplayPresenter @Inject constructor(){
+open class LightDisplayPresenter @Inject constructor(){
     lateinit var lightDisplay: LightsDisplayView
     val lightStateMachine = LightStateMachine.staticInstance
 

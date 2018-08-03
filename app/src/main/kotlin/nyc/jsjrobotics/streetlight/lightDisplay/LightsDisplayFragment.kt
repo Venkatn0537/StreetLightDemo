@@ -2,7 +2,6 @@ package nyc.jsjrobotics.streetlight.lightDisplay
 
 import android.os.Bundle
 import android.support.annotation.VisibleForTesting
-import android.support.v4.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
@@ -19,6 +18,7 @@ class LightsDisplayFragment : DefaultFragment() {
     lateinit var presenter: LightDisplayPresenter
 
     companion object {
+        @JvmField
         val TAG = "Fragment.LightsDisplayFragment"
     }
 

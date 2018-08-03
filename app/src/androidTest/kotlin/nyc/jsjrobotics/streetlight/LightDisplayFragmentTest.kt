@@ -6,9 +6,9 @@ import android.support.test.espresso.matcher.ViewMatchers
 import android.support.test.rule.ActivityTestRule
 import android.support.test.runner.AndroidJUnit4
 import android.support.v4.app.FragmentActivity
-import nyc.jsjrobotics.streetlight.lightDisplay.LightsDisplayFragment
 import android.widget.FrameLayout
 import nyc.jsjrobotics.streetlight.lightDisplay.LightDisplayPresenter
+import nyc.jsjrobotics.streetlight.lightDisplay.LightsDisplayFragment
 import nyc.jsjrobotics.streetlight.lightDisplay.LightsDisplayView
 import org.junit.Before
 import org.junit.Rule
