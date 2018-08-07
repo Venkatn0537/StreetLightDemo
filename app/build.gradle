@@ -6,13 +6,13 @@ apply plugin: 'kotlin-android-extensions'
 
 ext {
     dagger_version = "2.11"
-    mockito_version = "2.18.3"
+    mockito_version = "2.21.0"
 }
 
 android {
     compileSdkVersion 27
     defaultConfig {
-        applicationId "nyc.jsjrobotics.praneethstreetlight"
+        applicationId "nyc.jsjrobotics.streetlight"
         minSdkVersion 24
         targetSdkVersion 27
         versionCode 1
@@ -36,11 +36,16 @@ android {
 dependencies {
     implementation fileTree(dir: 'libs', include: ['*.jar'])
     implementation"org.jetbrains.kotlin:kotlin-stdlib-jdk7:$kotlin_version"
+
     testImplementation 'junit:junit:4.12'
+    testImplementation 'org.mockito:mockito-core:2.21.0'
+
     androidTestImplementation 'com.android.support.test:runner:1.0.2'
-    androidTestImplementation 'com.android.support.test.espresso:espresso-core:3.0.2'
     kaptAndroidTest 'com.google.dagger:dagger-compiler:2.11'
     androidTestImplementation ('com.android.support.test:rules:1.0.1')
+
+    androidTestImplementation 'com.android.support.test.espresso:espresso-core:3.0.2'
+    testImplementation "com.nhaarman.mockitokotlin2:mockito-kotlin:2.0.0-RC1"
 
     implementation 'com.android.support:appcompat-v7:27.1.1'
     implementation 'com.android.support.constraint:constraint-layout:1.1.2'
@@ -52,8 +57,6 @@ dependencies {
     kapt "com.google.dagger:dagger-android-processor:$dagger_version"
 
     // Mockito
-    testImplementation "org.mockito:mockito-inline:$mockito_version"
-    androidTestImplementation "org.mockito:mockito-android:$mockito_version"
 
     // Android lifecycle
     implementation "android.arch.lifecycle:runtime:1.1.1"

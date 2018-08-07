@@ -2,16 +2,13 @@ package nyc.jsjrobotics.streetlight
 
 import android.os.Handler
 import android.os.HandlerThread
-import android.support.annotation.VisibleForTesting
 import io.reactivex.Observable
 import io.reactivex.subjects.PublishSubject
+import javax.inject.Inject
+import javax.inject.Singleton
 
-
-class LightStateMachine
-@VisibleForTesting constructor(){
-    companion object {
-        var staticInstance : LightStateMachine = LightStateMachine()
-    }
+@Singleton
+class LightStateMachine @Inject constructor(){
     var currentLight : LightOption = LightOption.RED
 
     var currentFrame: Int = 0 ; set(value) {

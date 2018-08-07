@@ -1,5 +1,9 @@
 package nyc.jsjrobotics.streetlight
 
+import com.nhaarman.mockitokotlin2.doReturn
+import com.nhaarman.mockitokotlin2.mock
+import nyc.jsjrobotics.streetlight.lightDisplay.LightDisplayPresenter
+import nyc.jsjrobotics.streetlight.lightDisplay.LightsDisplayView
 import org.junit.Assert.assertTrue
 import org.junit.Before
 import org.junit.Test
@@ -7,7 +11,7 @@ import org.junit.Test
 
 class LightStateMachineTest {
     lateinit var testSubject: LightStateMachine
-
+    var lightsDisplayView: LightsDisplayView = LightsDisplayView()
     @Before
     fun setup() {
         testSubject = LightStateMachine()

@@ -4,11 +4,13 @@ import android.support.test.espresso.Espresso;
 import android.support.test.espresso.assertion.ViewAssertions;
 import android.support.test.espresso.matcher.ViewMatchers;
 import android.support.test.rule.ActivityTestRule;
+import android.support.test.runner.AndroidJUnit4;
 import android.widget.FrameLayout;
 
 import org.junit.Before;
 import org.junit.Rule;
 import org.junit.Test;
+import org.junit.runner.RunWith;
 
 import java.util.Arrays;
 import java.util.List;
@@ -20,6 +22,7 @@ import nyc.jsjrobotics.streetlight.lightDisplay.LightsDisplayView;
 
 import static org.mockito.Mockito.mock;
 
+@RunWith(AndroidJUnit4.class)
 public class LightDisplayFragmentTest2 {
     @Rule
     public ActivityTestRule<EspressoTestActivity> activityRule = new ActivityTestRule<>(EspressoTestActivity.class);

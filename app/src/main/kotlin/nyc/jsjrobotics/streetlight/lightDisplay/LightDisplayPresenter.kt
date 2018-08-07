@@ -3,9 +3,8 @@ package nyc.jsjrobotics.streetlight.lightDisplay
 import nyc.jsjrobotics.streetlight.LightStateMachine
 import javax.inject.Inject
 
-open class LightDisplayPresenter @Inject constructor(){
+class LightDisplayPresenter @Inject constructor(val lightStateMachine : LightStateMachine){
     lateinit var lightDisplay: LightsDisplayView
-    val lightStateMachine = LightStateMachine.staticInstance
 
     fun setView(v: LightsDisplayView) {
         lightDisplay = v

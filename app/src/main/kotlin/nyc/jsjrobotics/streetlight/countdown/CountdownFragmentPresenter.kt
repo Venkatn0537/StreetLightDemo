@@ -3,7 +3,7 @@ package nyc.jsjrobotics.streetlight.countdown
 import nyc.jsjrobotics.streetlight.LightStateMachine
 import javax.inject.Inject
 
-class CountdownFragmentPresenter @Inject constructor() {
+class CountdownFragmentPresenter @Inject constructor(val lightStateMachine: LightStateMachine) {
     lateinit var view : CountdownFragmentView
 
     fun subscribeToDisplayUpdates(v : CountdownFragmentView) {
@@ -13,7 +13,4 @@ class CountdownFragmentPresenter @Inject constructor() {
                     view.displayCurrentFrame(currentFrameNumber)
                 }
     }
-
-    val lightStateMachine = LightStateMachine.staticInstance
-
 }
