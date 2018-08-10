@@ -1,0 +1,3 @@
+For tests to run, must verify all unit test pass (testDebugUnitTest).
+Tests failed for me when I had an empty function annotated as a test
+Coverage files are generated under <module>/build/reports/coverage/debug/index.html and index.xml
